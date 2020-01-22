@@ -1,20 +1,15 @@
 # Add your code here
-def exit_jukebox
-  puts "Goodbye"
-end
-
-
 def run(songs)
   while true do
     puts "Please enter a command:"
-    response = gets.chomp!
+    response = gets.chomp
     case response
     when "exit"
       exit_jukebox
       break
     when "play"
       play(songs)
-          when "help"
+    when "help"
       help
     when "list"
       list(songs)
@@ -36,6 +31,9 @@ def play(songs)
   end
 end
 
+def exit_jukebox
+  puts "Goodbye"
+end
 
 def help
 puts  "I accept the following commands:"
