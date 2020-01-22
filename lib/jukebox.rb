@@ -5,3 +5,7 @@ def run(songs)
     response = gets.chomp!
     case response
     when "exit"
+      exit_jukebox
+      break
+    when "play"
+      play(songs)
