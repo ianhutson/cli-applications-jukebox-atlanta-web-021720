@@ -1,4 +1,9 @@
 # Add your code here
+def exit_jukebox
+  puts "Goodbye"
+end
+
+
 def run(songs)
   while true do
     puts "Please enter a command:"
@@ -31,9 +36,6 @@ def play(songs)
   end
 end
 
-def exit_jukebox
-  puts "Goodbye"
-end
 
 def help
 puts  "I accept the following commands:"
